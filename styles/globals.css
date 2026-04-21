@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #faf9f6;
+  --color-text: #1a1a1a;
+  --color-muted: #888880;
+  --color-faint: #c4c3bc;
+  --color-border: #e4e3de;
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'Noto Serif KR', serif;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
