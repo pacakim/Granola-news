@@ -1,11 +1,14 @@
 import "../styles/globals.css";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap');
-      `}</style>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+      </Head>
       <Component {...pageProps} />
     </>
   );
