@@ -10,8 +10,8 @@
   --color-muted: #888880;
   --color-faint: #c4c3bc;
   --color-border: #e4e3de;
-  --font-display: 'DM Serif Display', serif;
-  --font-body: 'Noto Serif KR', serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Noto Sans KR', sans-serif;
 }
 
 html {
