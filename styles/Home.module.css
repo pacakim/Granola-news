@@ -1,53 +1,38 @@
 .main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 4rem 2rem 5rem;
+  min-height: 100vh;
+  background: #6e5531;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
 }
-.header { margin-bottom: 3rem; }
-.siteTitle {
-  font-family: var(--font-display);
-  font-size: 42px;
-  font-weight: 400;
-  color: var(--color-text);
-  letter-spacing: -0.5px;
-  line-height: 1.1;
-}
-.siteSubtitle {
-  font-size: 14px;
-  color: var(--color-muted);
-  margin-top: 0.5rem;
-  font-weight: 300;
-}
-.divider {
-  border: none;
-  border-top: 1px solid var(--color-border);
-  margin-bottom: 3rem;
-}
-.sectionLabel {
-  font-size: 11px;
-  color: var(--color-faint);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem 4rem;
   align-items: flex-start;
+  justify-content: center;
 }
+
 .card {
   position: relative;
   cursor: pointer;
   width: 200px;
 }
-.imgWrap { position: relative; width: 100%; }
+
+.imgWrap {
+  position: relative;
+  width: 100%;
+}
+
 .coverImg {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
 }
+
 .imgPlaceholder {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -56,12 +41,13 @@
   align-items: center;
   justify-content: center;
   font-size: 11px;
-  color: var(--color-faint);
+  color: #999;
 }
+
 .cardOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(110, 85, 49, 0.92);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,27 +57,27 @@
   padding: 1rem;
   text-align: center;
 }
-.card:hover .cardOverlay { opacity: 1; }
+
+.card:hover .cardOverlay {
+  opacity: 1;
+}
+
 .vol {
   font-size: 11px;
-  color: var(--color-muted);
+  color: rgba(255,255,255,0.7);
   letter-spacing: 0.08em;
   margin-bottom: 0.4rem;
 }
+
 .cardTitle {
   font-size: 14px;
   font-weight: 400;
-  color: var(--color-text);
+  color: #ffffff;
   line-height: 1.55;
-  font-family: var(--font-body);
 }
+
 .date {
   font-size: 11px;
-  color: var(--color-faint);
+  color: rgba(255,255,255,0.6);
   margin-top: 0.4rem;
-}
-.footer {
-  margin-top: 5rem;
-  font-size: 12px;
-  color: var(--color-faint);
 }

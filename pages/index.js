@@ -14,33 +14,24 @@ export default function Home({ posts }) {
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
       <main className={styles.main}>
-        <header className={styles.header}>
-          <h1 className={styles.siteTitle}>Granola News</h1>
-          <p className={styles.siteSubtitle}>고마워서그래의 그래놀라 뉴스</p>
-        </header>
-        <hr className={styles.divider} />
-        <section>
-          <p className={styles.sectionLabel}>연재 목록</p>
-          <div className={styles.grid}>
-            {posts.map((post) => (
-              <Link href={"/" + post.slug} key={post.slug} className={styles.card}>
-                <div className={styles.imgWrap}>
-                  {post.cover ? (
-                    <img src={post.cover} alt={post.title} className={styles.coverImg} />
-                  ) : (
-                    <div className={styles.imgPlaceholder}><span>이미지</span></div>
-                  )}
-                  <div className={styles.cardOverlay}>
-                    <span className={styles.vol}>Vol. {post.vol}</span>
-                    <h2 className={styles.cardTitle}>{post.title}</h2>
-                    <span className={styles.date}>{formatDate(post.date)}</span>
-                  </div>
+        <div className={styles.grid}>
+          {posts.map((post) => (
+            <Link href={"/" + post.slug} key={post.slug} className={styles.card}>
+              <div className={styles.imgWrap}>
+                {post.cover ? (
+                  <img src={post.cover} alt={post.title} className={styles.coverImg} />
+                ) : (
+                  <div className={styles.imgPlaceholder}><span>이미지</span></div>
+                )}
+                <div className={styles.cardOverlay}>
+                  <span className={styles.vol}>Vol. {post.vol}</span>
+                  <h2 className={styles.cardTitle}>{post.title}</h2>
+                  <span className={styles.date}>{formatDate(post.date)}</span>
                 </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-        <footer className={styles.footer}>고마워서그래</footer>
+              </div>
+            </Link>
+          ))}
+        </div>
       </main>
     </>
   );
