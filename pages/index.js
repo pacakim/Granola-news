@@ -11,7 +11,7 @@ export default function Home({ posts }) {
         <meta name="description" content="고마워서그래의 그래놀라 뉴스" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
       <main className={styles.main}>
         <header className={styles.header}>
@@ -23,7 +23,7 @@ export default function Home({ posts }) {
           <p className={styles.sectionLabel}>연재 목록</p>
           <div className={styles.grid}>
             {posts.map((post) => (
-              <Link href={`/${post.slug}`} key={post.slug} className={styles.card}>
+              <Link href={"/" + post.slug} key={post.slug} className={styles.card}>
                 <div className={styles.imgWrap}>
                   {post.cover ? (
                     <img src={post.cover} alt={post.title} className={styles.coverImg} />
