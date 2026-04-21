@@ -2,11 +2,8 @@
 vol: 1
 title: "고마워서그래를 소개합니다"
 date: "2025-01"
-
+cover: "/images/vol-1.jpg"
 ---
-
-
-![](/images/vol1-1.jpg)
 ![](/images/vol1-2.jpg)
 ![](/images/vol1-3.jpg)
 ![](/images/vol1-4.jpg)
