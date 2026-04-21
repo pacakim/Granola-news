@@ -26,7 +26,7 @@ export default function Home({ posts }) {
         <hr className={styles.divider} />
 
         <section>
-          <p className={styles.sectionLabel}>연재 목록</p>
+          <p className={styles.sectionLabel}>Series</p>
           <div className={styles.grid}>
             {posts.map((post) => (
               <Link href={`/${post.slug}`} key={post.slug} className={styles.card}>
@@ -50,7 +50,7 @@ export default function Home({ posts }) {
         </section>
 
         <footer className={styles.footer}>
-          1년에 2–3편 연재
+         
         </footer>
       </main>
     </>
