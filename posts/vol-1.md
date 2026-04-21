@@ -2,35 +2,16 @@
 vol: 1
 title: "고마워서그래를 소개합니다"
 date: "2025-01"
-cover: "/images/vol-1.jpg"
+cover: "/images/vol1-1.jpg"
 ---
 
-여기에 글 내용을 쓰세요.
 
 ![](/images/vol1-1.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-2.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-3.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-4.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-5.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-6.jpg)
-
-여기에 글 내용을 쓰세요.
-
 ![](/images/vol1-7.jpg)
 
 ## 소제목 예시
