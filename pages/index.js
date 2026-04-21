@@ -11,22 +11,16 @@ export default function Home({ posts }) {
         <meta name="description" content="고마워서그래의 그래놀라 뉴스" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+KR:wght@300;400;500&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
-
       <main className={styles.main}>
         <header className={styles.header}>
           <h1 className={styles.siteTitle}>Granola News</h1>
           <p className={styles.siteSubtitle}>고마워서그래의 그래놀라 뉴스</p>
         </header>
-
         <hr className={styles.divider} />
-
         <section>
-          <p className={styles.sectionLabel}>Series</p>
+          <p className={styles.sectionLabel}>연재 목록</p>
           <div className={styles.grid}>
             {posts.map((post) => (
               <Link href={`/${post.slug}`} key={post.slug} className={styles.card}>
@@ -34,24 +28,19 @@ export default function Home({ posts }) {
                   {post.cover ? (
                     <img src={post.cover} alt={post.title} className={styles.coverImg} />
                   ) : (
-                    <div className={styles.imgPlaceholder}>
-                      <span>이미지</span>
-                    </div>
+                    <div className={styles.imgPlaceholder}><span>이미지</span></div>
                   )}
-                </div>
-                <div className={styles.cardBody}>
-                  <span className={styles.vol}>Vol. {post.vol}</span>
-                  <h2 className={styles.cardTitle}>{post.title}</h2>
-                  <span className={styles.date}>{formatDate(post.date)}</span>
+                  <div className={styles.cardOverlay}>
+                    <span className={styles.vol}>Vol. {post.vol}</span>
+                    <h2 className={styles.cardTitle}>{post.title}</h2>
+                    <span className={styles.date}>{formatDate(post.date)}</span>
+                  </div>
                 </div>
               </Link>
             ))}
           </div>
         </section>
-
-        <footer className={styles.footer}>
-         
-        </footer>
+        <footer className={styles.footer}>1년에 2–3편 연재</footer>
       </main>
     </>
   );
