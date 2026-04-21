@@ -40,7 +40,7 @@ export default function Home({ posts }) {
             ))}
           </div>
         </section>
-        <footer className={styles.footer}>1년에 2–3편 연재</footer>
+        <footer className={styles.footer}>건강한 재료로 정성껏 만든 수제 프리미엄 그래놀라와 <br> 맛과 균형을 생각한 비건 디저트를 만듭니다</footer>
       </main>
     </>
   );
