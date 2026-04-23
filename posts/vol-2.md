@@ -1,8 +1,8 @@
 ---
 vol: 2
 title: "고마워서그래를 '잘' 한다는 것"
-date: "2025-03-01"
-cover: "/images/vol-2.jpg"
+date: "2026-05-01"
+cover: "/images/vol2-1.jpg"
 ---
 
 여기에 에세이 본문을 작성하세요.
